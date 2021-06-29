@@ -13,6 +13,11 @@
 		F8AF7B77268AEB6A000C0BA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AF7B75268AEB6A000C0BA7 /* Main.storyboard */; };
 		F8AF7B79268AEB6B000C0BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AF7B78268AEB6B000C0BA7 /* Assets.xcassets */; };
 		F8AF7B7C268AEB6B000C0BA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AF7B7A268AEB6B000C0BA7 /* LaunchScreen.storyboard */; };
+		F8AF7B89268B2F4A000C0BA7 /* ShowData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AF7B88268B2F4A000C0BA7 /* ShowData.storyboard */; };
+		F8AF7B8C268B302E000C0BA7 /* ShowDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AF7B8B268B302E000C0BA7 /* ShowDataVC.swift */; };
+		F8AF7B90268B30C4000C0BA7 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AF7B8F268B30C4000C0BA7 /* Consts.swift */; };
+		F8AF7B92268B30CA000C0BA7 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AF7B91268B30CA000C0BA7 /* ViewControllers.swift */; };
+		F8AF7B94268B30D2000C0BA7 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AF7B93268B30D2000C0BA7 /* Storyboards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,12 @@
 		F8AF7B78268AEB6B000C0BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8AF7B7B268AEB6B000C0BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8AF7B7D268AEB6B000C0BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AF7B87268AF790000C0BA7 /* LoginWithAppleTutorial-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LoginWithAppleTutorial-iOS.entitlements"; sourceTree = "<group>"; };
+		F8AF7B88268B2F4A000C0BA7 /* ShowData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowData.storyboard; sourceTree = "<group>"; };
+		F8AF7B8B268B302E000C0BA7 /* ShowDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDataVC.swift; sourceTree = "<group>"; };
+		F8AF7B8F268B30C4000C0BA7 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		F8AF7B91268B30CA000C0BA7 /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		F8AF7B93268B30D2000C0BA7 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +67,77 @@
 		F8AF7B6E268AEB6A000C0BA7 /* LoginWithAppleTutorial-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F8AF7B6F268AEB6A000C0BA7 /* AppDelegate.swift */,
-				F8AF7B71268AEB6A000C0BA7 /* SceneDelegate.swift */,
-				F8AF7B73268AEB6A000C0BA7 /* ViewController.swift */,
-				F8AF7B75268AEB6A000C0BA7 /* Main.storyboard */,
-				F8AF7B78268AEB6B000C0BA7 /* Assets.xcassets */,
-				F8AF7B7A268AEB6B000C0BA7 /* LaunchScreen.storyboard */,
+				F8AF7B87268AF790000C0BA7 /* LoginWithAppleTutorial-iOS.entitlements */,
 				F8AF7B7D268AEB6B000C0BA7 /* Info.plist */,
+				F8AF7B83268AEC70000C0BA7 /* Resource */,
+				F8AF7B84268AEDB9000C0BA7 /* Source */,
 			);
 			path = "LoginWithAppleTutorial-iOS";
+			sourceTree = "<group>";
+		};
+		F8AF7B83268AEC70000C0BA7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F8AF7B8E268B30BA000C0BA7 /* Constants */,
+				F8AF7B6F268AEB6A000C0BA7 /* AppDelegate.swift */,
+				F8AF7B71268AEB6A000C0BA7 /* SceneDelegate.swift */,
+				F8AF7B78268AEB6B000C0BA7 /* Assets.xcassets */,
+				F8AF7B86268AEDF3000C0BA7 /* Storyboards */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F8AF7B84268AEDB9000C0BA7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F8AF7B85268AEDC7000C0BA7 /* VCs */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F8AF7B85268AEDC7000C0BA7 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				F8AF7B8D268B3031000C0BA7 /* Main */,
+				F8AF7B8A268B2FF7000C0BA7 /* ShowData */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		F8AF7B86268AEDF3000C0BA7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F8AF7B7A268AEB6B000C0BA7 /* LaunchScreen.storyboard */,
+				F8AF7B75268AEB6A000C0BA7 /* Main.storyboard */,
+				F8AF7B88268B2F4A000C0BA7 /* ShowData.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F8AF7B8A268B2FF7000C0BA7 /* ShowData */ = {
+			isa = PBXGroup;
+			children = (
+				F8AF7B8B268B302E000C0BA7 /* ShowDataVC.swift */,
+			);
+			path = ShowData;
+			sourceTree = "<group>";
+		};
+		F8AF7B8D268B3031000C0BA7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F8AF7B73268AEB6A000C0BA7 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F8AF7B8E268B30BA000C0BA7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F8AF7B8F268B30C4000C0BA7 /* Consts.swift */,
+				F8AF7B91268B30CA000C0BA7 /* ViewControllers.swift */,
+				F8AF7B93268B30D2000C0BA7 /* Storyboards.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8AF7B7C268AEB6B000C0BA7 /* LaunchScreen.storyboard in Resources */,
+				F8AF7B89268B2F4A000C0BA7 /* ShowData.storyboard in Resources */,
 				F8AF7B79268AEB6B000C0BA7 /* Assets.xcassets in Resources */,
 				F8AF7B77268AEB6A000C0BA7 /* Main.storyboard in Resources */,
 			);
@@ -137,9 +211,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AF7B92268B30CA000C0BA7 /* ViewControllers.swift in Sources */,
 				F8AF7B74268AEB6A000C0BA7 /* ViewController.swift in Sources */,
+				F8AF7B90268B30C4000C0BA7 /* Consts.swift in Sources */,
 				F8AF7B70268AEB6A000C0BA7 /* AppDelegate.swift in Sources */,
 				F8AF7B72268AEB6A000C0BA7 /* SceneDelegate.swift in Sources */,
+				F8AF7B8C268B302E000C0BA7 /* ShowDataVC.swift in Sources */,
+				F8AF7B94268B30D2000C0BA7 /* Storyboards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +364,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LoginWithAppleTutorial-iOS/LoginWithAppleTutorial-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T8C9SSEX5G;
+				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				INFOPLIST_FILE = "LoginWithAppleTutorial-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hyun99999.LoginWithAppleTutorial-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyun99999.LoginWithAppleTutorial-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,14 +384,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LoginWithAppleTutorial-iOS/LoginWithAppleTutorial-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T8C9SSEX5G;
+				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				INFOPLIST_FILE = "LoginWithAppleTutorial-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hyun99999.LoginWithAppleTutorial-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hyun99999.LoginWithAppleTutorial-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
