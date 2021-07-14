@@ -97,8 +97,24 @@ logo artwork 를 위의 제공하는 것에서만 사용해야한다. 커스텀�
 - Button bezel and shadow. For example, you can use a stroke to emphasize the button bezel or add a drop shadow.
 
 ### Custom Buttons with a Logo and Text
+**버튼의 높이에 따라 logi file 형식을 선택해라.** iOS 에서 권장하는 기본 버튼높이인 44포인트의 경우에만 PNG 파일을 사용한다. logos 는 크기가 small, medium, large 사이즈가 있으니까 모든 sign-up 버튼에 매치가능하다.
 
-일단 이게 먼저는 아니니까 보류. 근데 오늘 회의로 고려해야되버림.
+**타이틀에 시스템 폰트를 선호해라.** 무슨 폰트를 사용하더라도 title 과 custom button 의 높이는 system 에서 사용하는 것고 동일한 비율을 사용해야 한다. 예를 들어 시스템 글꼴을 사용하는 경우 제목의 글꼴 크기는 버튼 높이의 43% 여야 한다. 즉, 버튼 높이는 가장 가까운 정수로 반올림된 제목 글꼴 크기의 233% 여야 한다. 다음은 서로 다른 크기의 시스템 글꼴을 사용하여 비율을 보여주는 예시이다.
+
+<p align="center"><img width="700" alt="스크린샷 2021-07-15 오전 1 51 28" src="https://user-images.githubusercontent.com/69136340/125661413-99cec684-8e29-40f5-bd53-d44b9531227c.png"></p>
+
+**일반적으로, 대문자 스타일을 유지해라.** 기본적으로 모든 버튼의 Sign 또는 Continue 와 같은 첫번째 단어와 Apple 을 대문잘 표시한다. 다른 모든 문자는 소문자이다.
+
+**버튼 내에서 tile 과 logo 는 수직 정렬.** 먼저 title 을 가운데에 수직정렬하고, logo image 를 추가하여 높이가 버튼 높이와 일치하는 확인한다. logo image 가 상단, 하단 패딩이 포함되었음으로 제목을 세로로 정렬하면 올바르게 정렬되 상태를 유지 가능하다.
+
+**필요한 경우 logo 를 삽입해라.** Apple logo 를 다른 인증로고와 수평으로 정렬해야 하는 경우 logo 와 button 앞쪽 leading edge 사이의 공간을 조정할 수 있다.
+
+**title 과 button 의 right edge 의 여백을 최소한으로 유지해라.** 여백은 버튼 너비으 최소 8% 를 측정해야 한다.
+
+**최소 button 사이즈와 button 주변 여백을 유지해라.** button title 은 locale 에 따라서 길이가 달라질 수 있다. 다음 값을 지침으로 사용해라.
+<p align="center">
+<img width="643" alt="스크린샷 2021-07-15 오전 2 17 32" src="https://user-images.githubusercontent.com/69136340/125664708-cd5550f4-66bd-44aa-90e6-c1f6ea6f1825.png"></p>
+
 
 ### Custom Logo-Only Buttons
 
